@@ -1,0 +1,51 @@
+{
+    "id":413003,
+    "refId":182,
+    "number":"#Order:766",
+    "signature":null,
+    "source":"api",
+    "status":"ROBOCZE",
+    "statusDate":"2021-04-26T13:57:12",
+    "addDate":"2021-04-26T13:57:12",
+    "forwardDate":null,
+    "packDate":null,
+    "packUser":null,
+    "comments":"Uwagi dla magazynu",
+    "delivery":{
+       "carrier":"POCZTK48OP",
+       "currencyCOD":"PLN",
+       "amountCOD":12.22,
+       "additionalInfo":"Dodatkowe informacje o dostawie, np. numer paczkomatu",
+       "note":"Notatka dla kuriera"
+    },
+    "contactPerson":"Jan Kowalski",
+    "phone":"500600700",
+    "email":"test@test.dev",
+    "name1":"Nazwa firmy lub imię i nazwisko cz. 1",
+    "name2":"Nazwa firmy lub imię i nazwisko cz. 2",
+    "name3":"Nazwa firmy lub imię i nazwisko cz. 3",
+    "countryCode":"pl",
+    "postalCode":"00-100",
+    "place":"Warszawa",
+    "street":"ul. Nowa",
+    "serialNumber":null,
+    "note":"Notka!",
+    "positions":[
+       {
+          "id":3031305,
+          "productId":377800,
+          "refid":279,
+          "additionalId":"350",
+          "quantity":1
+       },
+       {
+          "id":3031306,
+          "productId":377798,
+          "refid":980,
+          "additionalId":"387",
+          "quantity":1
+       }
+    ],
+    "attachments":null,
+    "parcels":null
+ }

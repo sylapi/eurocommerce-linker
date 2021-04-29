@@ -1,0 +1,41 @@
+[
+   {
+      "id":377798,
+      "refid":980,
+      "additionalId":"387",
+      "sku":"BLK-MED-G279-GUC",
+      "code128":"code123224",
+      "ean":"96385074",
+      "name":"Product #278",
+      "warehouse":"HANDLOWY",
+      "quantity":0.0,
+      "quantityAdvice":0.0,
+      "quantityAvaiable":0.0
+   },
+   {
+      "id":377800,
+      "refid":279,
+      "additionalId":"350",
+      "sku":"BLK-MED-G918-GUC",
+      "code128":"code123628",
+      "ean":"99187750",
+      "name":"Product #244",
+      "warehouse":"HANDLOWY",
+      "quantity":0.0,
+      "quantityAdvice":0.0,
+      "quantityAvaiable":0.0
+   },
+   {
+      "id":377802,
+      "refid":328,
+      "additionalId":"945",
+      "sku":"BLK-MED-G661-GUC",
+      "code128":"code123502",
+      "ean":"57421032",
+      "name":"Product #571",
+      "warehouse":"HANDLOWY",
+      "quantity":0.0,
+      "quantityAdvice":0.0,
+      "quantityAvaiable":0.0
+   }
+]
