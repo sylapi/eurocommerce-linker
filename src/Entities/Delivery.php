@@ -46,7 +46,7 @@ class Delivery extends Entity
     /**
      * Get the value of carier
      */ 
-    public function getCarier(): string
+    public function getCarier(): ?string
     {
         return $this->carier;
     }
@@ -56,7 +56,7 @@ class Delivery extends Entity
      *
      * @return  self
      */ 
-    public function setCarier(string $carier)
+    public function setCarier(?string $carier): self
     {
         $this->carier = $carier;
 
@@ -66,7 +66,7 @@ class Delivery extends Entity
     /**
      * Get the value of currencyCOD
      */ 
-    public function getCurrencyCOD(): string
+    public function getCurrencyCOD(): ?string
     {
         return $this->currencyCOD;
     }
@@ -76,7 +76,7 @@ class Delivery extends Entity
      *
      * @return  self
      */ 
-    public function setCurrencyCOD(string $currencyCOD)
+    public function setCurrencyCOD(?string $currencyCOD): self
     {
         $this->currencyCOD = $currencyCOD;
 
@@ -86,7 +86,7 @@ class Delivery extends Entity
     /**
      * Get the value of amountCOD
      */ 
-    public function getAmountCOD(): float
+    public function getAmountCOD(): ?float
     {
         return $this->amountCOD;
     }
@@ -96,7 +96,7 @@ class Delivery extends Entity
      *
      * @return  self
      */ 
-    public function setAmountCOD(float $amountCOD)
+    public function setAmountCOD(?float $amountCOD): self
     {
         $this->amountCOD = $amountCOD;
 
@@ -106,7 +106,7 @@ class Delivery extends Entity
     /**
      * Get the value of additionalInfo
      */ 
-    public function getAdditionalInfo(): string
+    public function getAdditionalInfo(): ?string
     {
         return $this->additionalInfo;
     }
@@ -116,7 +116,7 @@ class Delivery extends Entity
      *
      * @return  self
      */ 
-    public function setAdditionalInfo(string $additionalInfo)
+    public function setAdditionalInfo(?string $additionalInfo): self
     {
         $this->additionalInfo = $additionalInfo;
 
@@ -126,7 +126,7 @@ class Delivery extends Entity
     /**
      * Get the value of note
      */ 
-    public function getNote(): string
+    public function getNote(): ?string
     {
         return $this->note;
     }
@@ -136,7 +136,7 @@ class Delivery extends Entity
      *
      * @return  self
      */ 
-    public function setNote(string $note)
+    public function setNote(?string $note): self
     {
         $this->note = $note;
 
