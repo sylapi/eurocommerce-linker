@@ -5,7 +5,7 @@ namespace Sylapi\EurocommerceLinker\Entities;
 
 use Sylapi\EurocommerceLinker\Collections\Positions;
 use Sylapi\EurocommerceLinker\Collections\ProductPackages;
-use Sylapi\EurocommerceLinker\Collections\OrderAttachements;
+use Sylapi\EurocommerceLinker\Collections\OrderAttachments;
 use Sylapi\EurocommerceLinker\Collections\OrderParcels;
 
 class Make
@@ -50,14 +50,14 @@ class Make
         return new Position;
     }
     
-    public function orderAttachements(): OrderAttachements
+    public function orderAttachments(): OrderAttachments
     {
-        return new OrderAttachements;
+        return new OrderAttachments;
     }
 
-    public function orderAttachement(): OrderAttachement
+    public function orderAttachement(): OrderAttachment
     {
-        return new OrderAttachement;
+        return new OrderAttachment;
     }
 
     public function orderParcels(): OrderParcels

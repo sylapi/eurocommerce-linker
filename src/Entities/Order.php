@@ -8,7 +8,7 @@ use Sylapi\EurocommerceLinker\Enums\CarierType;
 use Sylapi\EurocommerceLinker\Traits\Validatable;
 use Sylapi\EurocommerceLinker\Collections\Positions;
 use Sylapi\EurocommerceLinker\Collections\OrderParcels;
-use Sylapi\EurocommerceLinker\Collections\OrderAttachements;
+use Sylapi\EurocommerceLinker\Collections\OrderAttachments;
 
 class Order extends Entity
 {
@@ -39,7 +39,7 @@ class Order extends Entity
     private $serialNumber;
     private $note;
     private $positions;
-    private $attachements;
+    private $attachments;
     private $parcels;
 
     
@@ -78,8 +78,8 @@ class Order extends Entity
             'positions.*.refId' => 'nullable|integer',
             'positions.*.additionalId' => 'nullable|integer',
             'positions.*.quantity' => 'nullable|integer',
-            'attachements.*.name' => 'nullable',
-            'attachements.*.content' => 'nullable',
+            'attachments.*.name' => 'nullable',
+            'attachments.*.content' => 'nullable',
             'parcels' => 'nullable',
         ];
 
@@ -116,7 +116,7 @@ class Order extends Entity
             'serialNumber' => $this->getSerialNumber(),
             'note' => $this->getNote(),
             'positions'=> ($this->getPositions()) ? $this->getPositions()->toArray() : null,
-            'attachements' => ($this->getAttachements()) ? $this->getAttachements()->toArray() : null,
+            'attachments' => ($this->getAttachments()) ? $this->getAttachments()->toArray() : null,
             'parcels' => ($this->getParcels()) ? $this->getParcels()->toArray() : null
         ];
     }
@@ -625,21 +625,21 @@ class Order extends Entity
     }
 
     /**
-     * Get the value of attachements
+     * Get the value of attachments
      */ 
-    public function getAttachements(): ?OrderAttachements
+    public function getAttachments(): ?OrderAttachments
     {
-        return $this->attachements;
+        return $this->attachments;
     }
 
     /**
-     * Set the value of attachements
+     * Set the value of attachments
      *
      * @return  self
      */ 
-    public function setAttachements(?OrderAttachements $attachements): self
+    public function setAttachments(?OrderAttachments $attachments): self
     {
-        $this->attachements = $attachements;
+        $this->attachments = $attachments;
 
         return $this;
     }

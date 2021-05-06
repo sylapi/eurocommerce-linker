@@ -9,8 +9,8 @@ use Sylapi\EurocommerceLinker\Entities\Position;
 use Sylapi\EurocommerceLinker\Entities\OrderParcel;
 use Sylapi\EurocommerceLinker\Collections\Positions;
 use Sylapi\EurocommerceLinker\Collections\OrderParcels;
-use Sylapi\EurocommerceLinker\Entities\OrderAttachement;
-use Sylapi\EurocommerceLinker\Collections\OrderAttachements;
+use Sylapi\EurocommerceLinker\Entities\OrderAttachment;
+use Sylapi\EurocommerceLinker\Collections\OrderAttachments;
 use Sylapi\EurocommerceLinker\Entities\Order as OrderEntity;
 
 class Order
@@ -66,28 +66,28 @@ class Order
                 $orderParcel->setId($item->id)
                     ->setCarrier($item->carrier)
                     ->setNumber($item->number)
-                    ->setStatus($item->statusDate)
+                    ->setStatus($item->status)
                     ->setStatusDate($item->statusDate)
                     ->setOriginalStatus($item->originalStatus)
-                    ->setAddData($item->addData)
+                    ->setAddData($item->addDate)
                     ->setSentDate($item->sentDate)
                     ->setDeliveryDate($item->deliveryDate);
                 $parcels->add($orderParcel);
             }
         }
 
-        $attachements = null;
-        if(isset($this->result->attachements) 
-        && is_array($this->result->attachements))
+        $attachments = null;
+        if(isset($this->result->attachments) 
+        && is_array($this->result->attachments))
         {
-            $attachements = (count($this->result->attachements) > 0) ? new OrderAttachements() : null;
+            $attachments = (count($this->result->attachments) > 0) ? new OrderAttachments() : null;
 
-            foreach ($this->result->attachements as $item) {
-                $orderAttachement = new OrderAttachement();
-                $orderAttachement->setName($item->name)
+            foreach ($this->result->attachments as $item) {
+                $orderAttachment = new OrderAttachment();
+                $orderAttachment->setName($item->name)
                     ->setContent($item->content);
 
-                $attachements->add($orderAttachement);
+                $attachments->add($orderAttachment);
             }
         }
 
@@ -117,7 +117,7 @@ class Order
             ->setSerialNumber($this->result->serialNumber)
             ->setNote($this->result->note)
             ->setPositions($positions)
-            ->setAttachements($attachements)
+            ->setAttachments($attachments)
             ->setParcels($parcels);
             
         return $order;

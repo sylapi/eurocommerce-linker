@@ -5,7 +5,7 @@ namespace Sylapi\EurocommerceLinker\Collections;
 
 use Sylapi\EurocommerceLinker\Abstracts\Collection;
 
-class OrderAttachements extends Collection
+class OrderAttachments extends Collection
 {
 
 }

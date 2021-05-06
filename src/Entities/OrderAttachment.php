@@ -6,7 +6,7 @@ namespace Sylapi\EurocommerceLinker\Entities;
 use Sylapi\EurocommerceLinker\Abstracts\Entity;
 use Sylapi\EurocommerceLinker\Traits\Validatable;
 
-class OrderAttachement extends Entity
+class OrderAttachment extends Entity
 {
     use Validatable;
 
