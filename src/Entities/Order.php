@@ -357,7 +357,7 @@ class Order extends Entity
      *
      * @return  self
      */ 
-    public function setDelivery(?Delivery $delivery)
+    public function setDelivery(?Delivery $delivery): self
     {
         $this->delivery = $delivery;
 
