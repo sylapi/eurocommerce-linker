@@ -76,7 +76,7 @@ class Order extends Entity
             'note' => 'nullable|max:2048',
             'positions.*.productId' => 'nullable|integer',
             'positions.*.refId' => 'nullable|integer',
-            'positions.*.additionalId' => 'nullable|integer',
+            'positions.*.additionalId' => 'nullable',
             'positions.*.quantity' => 'nullable|integer',
             'attachments.*.name' => 'nullable',
             'attachments.*.content' => 'nullable',
