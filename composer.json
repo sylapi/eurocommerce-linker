@@ -31,5 +31,5 @@
         "coverage": "XDEBUG_MODE=coverage  vendor/bin/phpunit --verbose --coverage-text",
         "coverage-html": "XDEBUG_MODE=coverage  vendor/bin/phpunit --coverage-html ./coverage/"
     },    
-    "prefer-stable": false
+    "prefer-stable": true
 }
