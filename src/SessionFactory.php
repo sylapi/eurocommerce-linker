@@ -11,7 +11,7 @@ class SessionFactory
     private $sessions = [];
     private $parameters;
 
-    const API_LIVE = 'https://magazyn.eurocommerce.pl/api/';
+    const API_LIVE = 'https://linker.eurocommerce.pl/api/';
 
     public function session(Parameters $parameters): Session
     {
